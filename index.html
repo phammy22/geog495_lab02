@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Zain Shoe: Home </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="who.html">Who?</a>
+        <a href="what.html">What?</a>
+        <a href="how.html">How?</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Page Content-->
+    <div class="content">
+        <h1>Introducing: Zain Shoe.</h1>
+        <h2> The content of this page will answer the questions... </h2>
+        <ol>
+            <li>Who is Zain?</li>
+            <li>What is Zain Shoe?</li>
+            <li>How did the Zain Shoe meme originate?</li>
+        </ol>
+        <!-- The grid: four columns -->
+        <p> Click on images to enlarge </p>
+        <div class="row">
+            <div class="column">
+            <img src="/media/shoes1.JPG" alt="Zain Shoe. 1" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="/media/shoes2.JPG" alt="Zain Shoe. 2" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="/media/shoes3.JPG" alt="Zain Shoe. 3" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="/media/shoes4.JPG" alt="Zain Shoe. 4" onclick="myFunction(this);">
+            </div>
+        </div>
+        
+        <!-- The expanding image container -->
+        <div class="exp-container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width: 50%">
+        
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
